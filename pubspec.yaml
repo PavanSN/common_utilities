@@ -1,18 +1,26 @@
 name: common_utilities
-description: "A new Flutter package project."
-version: 0.0.1
-homepage:
+description: "Common Utilities for Flutter Developers is a package that offers a versatile collection of essential tools to streamline your Flutter development. It includes utilities for state management, form validation, UI enhancements, and more. Designed with reusability in mind, this package helps you write clean, maintainable code and speeds up your development process. Perfect for both beginners and seasoned developers, these utilities simplify common tasks and enhance your Flutter apps."
+version: 0.1.6
+homepage: https://github.com/PavanSN/common_utilities.git
 
 environment:
   sdk: ^3.5.0
   flutter: ">=1.17.0"
 
 dependencies:
+  bloc: ^8.1.4
   cached_network_image: ^3.4.1
   flutter:
     sdk: flutter
+  flutter_bloc: ^8.1.6
   flutter_svg: ^2.0.10+1
+  fluttertoast: ^8.2.8
+  geocoding: ^3.0.0
+  geolocator: ^13.0.1
+  get_cubit: ^1.1.0
   lottie: ^3.1.2
+  open_settings_plus: ^0.3.3
+  permission_handler: ^11.3.1
 
 dev_dependencies:
   flutter_test:

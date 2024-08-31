@@ -7,8 +7,8 @@ Color buttonColor = Colors.orange;
 
 enum IconPosition { start, middleStart, middleEnd, end }
 
-class Buttons extends StatefulWidget {
-  const Buttons({
+class CustomButtons extends StatefulWidget {
+  const CustomButtons({
     super.key,
     required this.actionIcon,
     this.borderedButton = false,
@@ -28,9 +28,9 @@ class Buttons extends StatefulWidget {
   final String buttonText;
 
   @override
-  State<Buttons> createState() => _ButtonsState();
+  State<CustomButtons> createState() => _CustomButtonsState();
 
-  factory Buttons.mini({
+  factory CustomButtons.mini({
     required String actionIcon,
     bool? borderedButton,
     ValueNotifier<bool>? isLoading,
@@ -38,7 +38,7 @@ class Buttons extends StatefulWidget {
     required IconPosition position,
     required String buttonText,
   }) {
-    return Buttons(
+    return CustomButtons(
       actionIcon: actionIcon,
       miniButton: true,
       borderedButton: borderedButton ?? false,
@@ -49,7 +49,7 @@ class Buttons extends StatefulWidget {
     );
   }
 
-  factory Buttons.regular({
+  factory CustomButtons.regular({
     required String actionIcon,
     bool? borderedButton,
     ValueNotifier<bool>? isLoading,
@@ -57,7 +57,7 @@ class Buttons extends StatefulWidget {
     required IconPosition position,
     required String buttonText,
   }) {
-    return Buttons(
+    return CustomButtons(
       actionIcon: actionIcon,
       miniButton: false,
       borderedButton: borderedButton ?? false,
@@ -68,7 +68,7 @@ class Buttons extends StatefulWidget {
     );
   }
 
-  factory Buttons.buttonWithTrailing({
+  factory CustomButtons.buttonWithTrailing({
     required String actionIcon,
     bool? borderedButton,
     ValueNotifier<bool>? isLoading,
@@ -76,7 +76,7 @@ class Buttons extends StatefulWidget {
     required IconPosition position,
     required String buttonText,
   }) {
-    return Buttons(
+    return CustomButtons(
       actionIcon: actionIcon,
       miniButton: false,
       borderedButton: borderedButton ?? false,
@@ -87,7 +87,7 @@ class Buttons extends StatefulWidget {
     );
   }
 
-  factory Buttons.buttonWithLeading({
+  factory CustomButtons.buttonWithLeading({
     required String actionIcon,
     bool? borderedButton,
     ValueNotifier<bool>? isLoading,
@@ -95,7 +95,7 @@ class Buttons extends StatefulWidget {
     required IconPosition position,
     required String buttonText,
   }) {
-    return Buttons(
+    return CustomButtons(
       actionIcon: actionIcon,
       miniButton: false,
       borderedButton: borderedButton ?? false,
@@ -107,7 +107,7 @@ class Buttons extends StatefulWidget {
   }
 }
 
-class _ButtonsState extends State<Buttons> {
+class _CustomButtonsState extends State<CustomButtons> {
   @override
   Widget build(BuildContext context) {
     return ValueListenableBuilder(

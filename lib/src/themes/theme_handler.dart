@@ -1,10 +1,8 @@
-
 import 'package:flutter/material.dart';
 
 import 'app_theme.dart';
-import 'light_theme.dart';
 
-class ThemeHandler with ChangeNotifier{
+class ThemeHandler with ChangeNotifier {
   static final ThemeHandler i = ThemeHandler._i();
 
   ThemeHandler._i();
@@ -13,7 +11,8 @@ class ThemeHandler with ChangeNotifier{
 
   static late AppTheme currentTheme;
 
-  initializeTheme() => currentTheme = LightTheme();
-
-  updateTheme(AppTheme theme) => currentTheme = theme;
+  updateTheme(AppTheme theme) {
+    currentTheme = theme;
+    notifyListeners();
+  }
 }
