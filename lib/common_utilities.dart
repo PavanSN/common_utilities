@@ -6,3 +6,4 @@ export 'src/screen_const/screen_constants.dart';
 export 'src/themes/app_theme.dart';
 export 'src/themes/text_styles.dart';
 export 'src/themes/theme_handler.dart';
+export 'src/location/location_manager.dart';

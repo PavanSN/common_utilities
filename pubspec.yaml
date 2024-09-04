@@ -1,6 +1,6 @@
-name: common_utilities
+name: common_utilities_flutter
 description: "Common Utilities for Flutter Developers is a package that offers a versatile collection of essential tools to streamline your Flutter development. It includes utilities for state management, form validation, UI enhancements, and more. Designed with reusability in mind, this package helps you write clean, maintainable code and speeds up your development process. Perfect for both beginners and seasoned developers, these utilities simplify common tasks and enhance your Flutter apps."
-version: 0.1.6
+version: 0.1.8
 homepage: https://github.com/PavanSN/common_utilities.git
 
 environment:
